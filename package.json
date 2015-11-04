@@ -1,0 +1,24 @@
+{
+  "name": "vdom-serialized-patch",
+  "version": "1.0.0",
+  "description": "Serialize and apply patches from virtual-dom",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "virtual",
+    "dom",
+    "serialized",
+    "web worker"
+  ],
+  "author": "Nolan Lawson <nolan@nolanlawson.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "vdom-to-html": "^2.1.1",
+    "zuul": "^3.7.2"
+  }
+}
