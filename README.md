@@ -1,4 +1,4 @@
-vdom-serialized-patch
+vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-serialized-patch.svg)](https://travis-ci.org/nolanlawson/vdom-serialized-patch)
 ========
 
 Serialize [virtual-dom](https://github.com/Matt-Esch/virtual-dom) patches into a very efficient JSON format, and then deserialize directly from that JSON object.
