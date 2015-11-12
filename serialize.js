@@ -1,1 +1,1 @@
-module.exports = require('lib/serialize');
+module.exports = require('./lib/serialize');
