@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.0",
+    "jsdom": "^7.0.2",
     "mocha": "^2.3.3",
     "vdom-to-html": "^2.1.1",
     "zuul": "^3.7.2"
