@@ -1,0 +1,79 @@
+vdom-serialized-patch
+========
+
+Serialize [virtual-dom](https://github.com/Matt-Esch/virtual-dom) patches into a very efficient JSON format, and then deserialize directly from that JSON object.
+
+Designed for generating patches on the server or in a web worker and then sending that to the client. Basically this a more efficient and specialized version of [vdom-as-json](https://github.com/nolanlawson/vdom-as-json).
+
+Motivation
+----
+
+The `virtual-dom` library is great, but the problem is that the `VirtualPatch` object structure is 1) huge (containing the entire source node as well as the patch object and the object to be patched), and 2) unserializable.
+
+This library solves both those problems, although to do so I had to implement my own version of `virtual-dom/patch`. So you'll have to use this library's `patch` method.
+
+Install
+----
+
+    npm install vdom-serialized-patch
+    
+
+Usage
+
+```js
+var h = require('virtual-dom/h');
+var diff = require('virtual-dom/diff');
+var serializePatch = require('vdom-serialized-patch/serialize');
+var applyPatch = require('vdom-serialized-patch/patch');
+
+var node1 = h('span', 'hello');
+var node2 = h('span.heavy', {style: {'font-weight': 'bold'}}, 'hello world');
+
+var patch = diff(node1, node2);
+var serializedPatch = serializePatch(patch);
+
+applyPatch(document.querySelector('#my-element'), serializedPatch);
+```
+
+In this case, the serialized patch will look like this:
+
+```json
+{
+  "0": [
+    [
+      4,
+      {
+        "style": {
+          "font-weight": "bold"
+        },
+        "className": "heavy"
+      },
+      {
+        "p": {}
+      }
+    ]
+  ],
+  "1": [
+    [
+      1,
+      {
+        "t": 1,
+        "x": "hello world"
+      }
+    ]
+  ],
+  "a": [
+    [
+      null
+    ],
+    1
+  ]
+}
+```
+
+(This structure is not designed to be human-readable; it's designed to be efficient when doing `JSON.stringify`/`JSON.parse`).
+
+Limitations
+---
+
+This library, like `vdom-as-json`, doesn't support thunks or hooks or any of that stuff, because it's not possible to serialize custom behavior.
