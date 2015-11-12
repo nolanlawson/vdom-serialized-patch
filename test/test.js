@@ -41,6 +41,33 @@ var structures = [
     'data-something': 1,
     'data-something-else': true,
     'data-another-thing': null
+  }}),
+  h('div', {attributes: {
+    'data-something-else': true,
+    'data-another-thing': null
+  }}),
+  h('div', {attributes: {
+    'data-something': 5,
+    'data-something-else': true,
+    'data-another-thing': null,
+    'data-hey-again': 'foo'
+  }}),
+  h('div', {style: {
+    'font-weight': 'bold'
+  }}),
+  h('div', {style: {
+    'font-weight': 'normal'
+  }}),
+  h('div', {style: {
+  }}),
+  h('div', {style: {
+    'font-weight': 'normal',
+    'font-size': '12px'
+  }}),
+  h('div', {style: {
+    'font-weight': 'normal',
+    'font-size': '12px',
+    'color': 'white'
   }})
 ];
 
