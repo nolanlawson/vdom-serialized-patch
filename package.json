@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Serialize and apply patches from virtual-dom",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "zuul --phantom --ui mocha-bdd test/test.js"
+  },
   "keywords": [
     "virtual",
     "dom",
@@ -19,8 +21,9 @@
     "chai": "^3.4.0",
     "jsdom": "^7.0.2",
     "mocha": "^2.3.3",
-    "virtual-dom": "^2.1.1",
+    "phantomjs": "^1.9.18",
     "vdom-to-html": "^2.1.1",
+    "virtual-dom": "^2.1.1",
     "zuul": "^3.7.2"
   }
 }
