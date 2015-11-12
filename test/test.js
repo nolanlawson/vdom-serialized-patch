@@ -4,7 +4,6 @@ var h = require('virtual-dom/h');
 var diff = require('virtual-dom/diff');
 var serialize = require('../lib/serialize');
 var applyPatch = require('../lib/patch');
-var VirtualNode = require('virtual-dom/vnode/vnode');
 var chai = require('chai');
 var vdomToHtml = require('vdom-to-html');
 var applyPatchOriginal = require('virtual-dom/patch');
@@ -52,6 +51,8 @@ describe('test suite', function () {
     var rightHTML = parent.innerHTML;
 
     console.log(rightHTML);
+
+    leftHTML.should.equal(rightHTML);
   });
 
 });
