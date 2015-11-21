@@ -10,7 +10,7 @@ Motivation
 
 The `virtual-dom` library is great, but the problem is that the `VirtualPatch` object structure is:
 
-1. huge &ndash; containing the entire source node as well as the patch object and the object to be patched &ndash, and
+1. huge &ndash; containing the entire source node as well as the patch object and the object to be patched &ndash; and
 2. unserializable, since it uses custom classes like `VirtualPatch` and `VirtualText`.
 
 This library solves both those problems, although to do so I had to implement my own version of `virtual-dom/patch`. So you'll have to use this library's `patch` method.
