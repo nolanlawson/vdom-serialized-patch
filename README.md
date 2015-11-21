@@ -3,7 +3,7 @@ vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-se
 
 Serialize [virtual-dom](https://github.com/Matt-Esch/virtual-dom) patches into a very efficient JSON format, and then patch the DOM directly from that object.
 
-Designed for generating patches on the server or in a web worker and then sending that to the client. Basically this a more efficient and specialized version of [vdom-as-json](https://github.com/nolanlawson/vdom-as-json).
+Designed for generating patches on the server or in a web worker and then sending that to the client. Basically this a more efficient and specialized version of [vdom-as-json](https://github.com/nolanlawson/vdom-as-json). The only catch is that you have to patch the DOM using this module's `patch` method rather than `virtual-dom/patch`.
 
 Motivation
 ----
