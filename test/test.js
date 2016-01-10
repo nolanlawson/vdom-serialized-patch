@@ -68,7 +68,8 @@ var structures = [
     'font-weight': 'normal',
     'font-size': '12px',
     'color': 'white'
-  }})
+  }}),
+  h('div', {key: 'something'})
 ];
 
 describe('test suite', function () {
