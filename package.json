@@ -34,5 +34,6 @@
   },
   "browser": {
     "jsdom": false
-  }
+  },
+  "files": ["lib", "index.js", "patch.js", "serialize.js"]
 }
