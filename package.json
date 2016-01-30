@@ -1,6 +1,6 @@
 {
   "name": "vdom-serialized-patch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Serialize and apply patches from virtual-dom",
   "main": "index.js",
   "scripts": {
@@ -35,5 +35,10 @@
   "browser": {
     "jsdom": false
   },
-  "files": ["lib", "index.js", "patch.js", "serialize.js"]
+  "files": [
+    "lib",
+    "index.js",
+    "patch.js",
+    "serialize.js"
+  ]
 }
