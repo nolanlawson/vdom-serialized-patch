@@ -9,6 +9,11 @@ var vdomToHtml = require('vdom-to-html');
 var applyPatchOriginal = require('virtual-dom/patch');
 chai.should();
 
+if (!process.browser) {
+  var jsdom = require('jsdom').jsdom;
+  global.document = jsdom('<html><body></body></html>');
+}
+
 var structures = [
   h("div", "hello"),
   h("div", [h("span", "goodbye")]),
@@ -37,6 +42,7 @@ var structures = [
   h('h1.fun', {style: {'font-family': 'Comic Sans MS'}}, 'Happy Birthday!'),
   h('input', {type: 'number'}, 1),
   h('input', {type: 'number', value: 1}),
+  h('input', {type: 'number'}),
   h('div', {attributes: {
     'data-something': 1,
     'data-something-else': true,
@@ -69,7 +75,9 @@ var structures = [
     'font-size': '12px',
     'color': 'white'
   }}),
-  h('div', {key: 'something'})
+  h('div', {key: 'something'}),
+  h('div', {style: {background: 'blue', color: 'red'}}),
+  h('div', {})
 ];
 
 describe('test suite', function () {

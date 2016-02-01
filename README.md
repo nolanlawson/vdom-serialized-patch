@@ -1,4 +1,4 @@
-vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-serialized-patch.svg)](https://travis-ci.org/nolanlawson/vdom-serialized-patch)
+vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-serialized-patch.svg)](https://travis-ci.org/nolanlawson/vdom-serialized-patch) [![Coverage Status](https://coveralls.io/repos/github/nolanlawson/vdom-serialized-patch/badge.svg?branch=master)](https://coveralls.io/github/nolanlawson/vdom-serialized-patch?branch=master)
 ========
 
 Serialize [virtual-dom](https://github.com/Matt-Esch/virtual-dom) patches into a very efficient JSON format, and then patch the DOM directly from that object.
@@ -81,3 +81,22 @@ Limitations
 ---
 
 This library, like `vdom-as-json`, doesn't support thunks or hooks or any of that stuff, because it's not possible to serialize custom behavior.
+
+Testing this library
+---
+
+Test in node using JSDom:
+
+    npm test
+
+Test in the browser using Zuul and PhantomJS:
+
+    npm run test-phantom
+
+Test locally in your browser of choice:
+
+    npm run test-local
+
+Test for code coverage:
+
+    npm run coverage
