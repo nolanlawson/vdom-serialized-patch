@@ -77,7 +77,8 @@ var structures = [
   }}),
   h('div', {key: 'something'}),
   h('div', {style: {background: 'blue', color: 'red'}}),
-  h('div', {})
+  h('div', {}),
+  h('input', {type: 'text', value: 'SoftSetHook'})
 ];
 
 describe('test suite', function () {
