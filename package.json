@@ -1,6 +1,6 @@
 {
   "name": "vdom-serialized-patch",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Serialize and apply patches from virtual-dom",
   "main": "index.js",
   "scripts": {
