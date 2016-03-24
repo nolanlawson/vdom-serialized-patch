@@ -14,6 +14,15 @@ if (!process.browser) {
   global.document = jsdom('<html><body></body></html>');
 }
 
+function Thunk(str){
+  this.str = str;
+}
+function renderThunk(){
+  return h("div", this.str);
+}
+Thunk.prototype.type = "Thunk";
+Thunk.prototype.render = renderThunk;
+
 var structures = [
   h("div", "hello"),
   h("div", [h("span", "goodbye")]),
@@ -78,7 +87,8 @@ var structures = [
   h('div', {key: 'something'}),
   h('div', {style: {background: 'blue', color: 'red'}}),
   h('div', {}),
-  h('input', {type: 'text', value: 'SoftSetHook'})
+  h('input', {type: 'text', value: 'SoftSetHook'}),
+  new Thunk("thunktest")
 ];
 
 describe('test suite', function () {
