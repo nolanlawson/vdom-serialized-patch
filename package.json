@@ -40,5 +40,13 @@
     "index.js",
     "patch.js",
     "serialize.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolanlawson/vdom-serialized-patch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nolanlawson/vdom-serialized-patch/issues"
+  },
+  "homepage": "https://github.com/nolanlawson/vdom-serialized-patch#readme"
 }
