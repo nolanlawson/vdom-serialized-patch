@@ -22,7 +22,7 @@
     "vdom-as-json": "1.0.9"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
+    "chai": "^4.0.0",
     "istanbul": "^0.4.2",
     "istanbul-coveralls": "^1.0.3",
     "jsdom": "^7.2.2",
