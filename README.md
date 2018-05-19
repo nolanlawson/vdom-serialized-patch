@@ -1,4 +1,4 @@
-vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-serialized-patch.svg)](https://travis-ci.org/nolanlawson/vdom-serialized-patch) [![Coverage Status](https://coveralls.io/repos/github/nolanlawson/vdom-serialized-patch/badge.svg?branch=master)](https://coveralls.io/github/nolanlawson/vdom-serialized-patch?branch=master)
+vdom-serialized-patch [![Build Status](https://travis-ci.org/nolanlawson/vdom-serialized-patch.svg)](https://travis-ci.org/nolanlawson/vdom-serialized-patch) [![Coverage Status](https://coveralls.io/repos/github/nolanlawson/vdom-serialized-patch/badge.svg?branch=master)](https://coveralls.io/github/nolanlawson/vdom-serialized-patch?branch=master) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 ========
 
 Serialize [virtual-dom](https://github.com/Matt-Esch/virtual-dom) patches into a very efficient JSON format, and then patch the DOM directly from that object.
