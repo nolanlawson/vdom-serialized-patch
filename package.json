@@ -19,15 +19,15 @@
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "vdom-as-json": "1.0.9"
+    "vdom-as-json": "1.0.11"
   },
   "devDependencies": {
     "chai": "^3.4.0",
     "istanbul": "^0.4.2",
     "istanbul-coveralls": "^1.0.3",
-    "jsdom": "^7.2.2",
-    "mocha": "^2.3.3",
-    "phantomjs": "^1.9.18",
+    "jsdom": "^9.11.0",
+    "mocha": "^3.2.0",
+    "phantomjs": "^2.1.7",
     "vdom-to-html": "^2.1.1",
     "virtual-dom": "^2.1.1",
     "zuul": "^3.7.2"
