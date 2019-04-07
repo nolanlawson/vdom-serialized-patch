@@ -26,7 +26,7 @@
     "istanbul": "^0.4.2",
     "istanbul-coveralls": "^1.0.3",
     "jsdom": "^7.2.2",
-    "mocha": "^2.3.3",
+    "mocha": "^3.4.2",
     "phantomjs": "^1.9.18",
     "vdom-to-html": "^2.1.1",
     "virtual-dom": "^2.1.1",
